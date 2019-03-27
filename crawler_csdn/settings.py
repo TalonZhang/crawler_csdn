@@ -15,7 +15,7 @@ SPIDER_MODULES = ['crawler_csdn.spiders']
 NEWSPIDER_MODULE = 'crawler_csdn.spiders'
 
 # MongoDB database
-mongo_host = '47.93.216.105'
+mongo_host = ''
 mongo_port = 27017
 mongo_db_name = 'csdn'
 mongo_db_collection = 'csdn_article'
