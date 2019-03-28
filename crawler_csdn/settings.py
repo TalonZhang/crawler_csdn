@@ -15,10 +15,15 @@ SPIDER_MODULES = ['crawler_csdn.spiders']
 NEWSPIDER_MODULE = 'crawler_csdn.spiders'
 
 # MongoDB database
+# input your host
 mongo_host = ''
 mongo_port = 27017
 mongo_db_name = 'csdn'
-mongo_db_collection = 'csdn_article'
+# csdn_spider
+# mongo_db_collection = 'csdn_blog'
+# article_spider
+url_collection = 'csdn_blog'
+mongo_db_collection = 'blog_article'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent

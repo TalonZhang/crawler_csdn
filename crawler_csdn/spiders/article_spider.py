@@ -20,6 +20,13 @@ class ArticleSpiderSpider(scrapy.Spider):
             response.xpath(
                 "//main//div[@class='blog-content-box']//div//div//div[1]//h1/text()"
             ).extract_first()
+        csdn_item['blog_time'] = \
+            response.xpath("//main//div[@class='blog-content-box']//"
+                           "div[@class='article-header-box']//"
+                           "div[@class='article-header']//"
+                           "div[@class='article-info-box']//"
+                           "div[@class='article-bar-top']//"
+                           "span[@class='time']/text()").extract_first()
         csdn_item['blog_content'] = \
             response.xpath("//article").extract_first()
         yield csdn_item

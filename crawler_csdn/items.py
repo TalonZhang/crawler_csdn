@@ -21,5 +21,7 @@ class CrawlerCsdnItem(scrapy.Item):
 
     # 内容
     blog_content = scrapy.Field()
+    # 发布日期及时间
+    blog_time = scrapy.Field()
 
     pass
